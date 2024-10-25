@@ -37,9 +37,19 @@ int main()
     america.addC(wolf1);
     america.addC(wolf2);
 
+    wildebeest1->Print();
+    wildebeest1->eatGrass();
+    wildebeest1->Print();
+
+    lion1->Print();
+    lion1->eatHerb(wildebeest1);
+    lion1->Print();
+
+    wildebeest1->Print();
     africa.Print();
     america.Print();
-    animalWorld.feedHerbivore();
-
-    animalWorld.PrintAll();
+    
+   /* animalWorld.feedHerbivore();
+    africa.Print();
+    animalWorld.PrintAll();*/
 }

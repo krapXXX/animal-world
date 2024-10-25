@@ -4,12 +4,12 @@
 
 void AnimalWorld::feedHerbivore()
 {
-    for (auto bison : bisons) 
+    for (Bison* bison : bisons) 
     {
         bison->eatGrass();
         bison->Print();
     }
-    for (auto wildebeest : wildebeests) 
+    for (Wildebeest* wildebeest : wildebeests)
     {
         wildebeest->eatGrass();
         wildebeest->Print();
@@ -17,17 +17,17 @@ void AnimalWorld::feedHerbivore()
 }
 void AnimalWorld::feedCarnivore()
 {
-    for (auto wolf : wolves) 
+    for (Wolf* wolf : wolves) 
     {
-        for (auto bison : bisons) 
+        for (Bison* bison : bisons) 
         {
             wolf->eatHerb(bison);
             wolf->Print();
         }
     }
-    for (auto lion : lions)
+    for (Lion* lion : lions)
     {
-        for (auto wildebeest : wildebeests)
+        for (Wildebeest* wildebeest : wildebeests)
         {
             lion->eatHerb(wildebeest);
             lion->Print();

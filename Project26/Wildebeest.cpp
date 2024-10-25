@@ -23,7 +23,7 @@ void Wildebeest::setWeight(int w)
 
 bool Wildebeest::isAlive()
 {
-	if (weight == 0)
+	if (weight <= 0)
 	{
 		return false;
 	}
@@ -33,9 +33,10 @@ bool Wildebeest::isAlive()
 void Wildebeest::Print()
 {
 	cout << "\t Wildbeest: " << endl << "weight: " << weight << endl << "state: ";
-	if (life == true)
+	if (isAlive() == true)
 	{
 		cout << "alive"<<endl;
 	}
-	else cout << "dead" << endl;
+	else 
+		cout << "dead" << endl;
 }

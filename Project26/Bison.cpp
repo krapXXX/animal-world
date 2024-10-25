@@ -23,7 +23,7 @@ void Bison::setWeight(int w)
 
 bool Bison::isAlive()
 {
-	if (weight == 0)
+	if (weight <= 0)
 	{
 		return false;
 	}
@@ -33,7 +33,7 @@ bool Bison::isAlive()
 void Bison::Print()
 {
 	cout << "\t Bison: " << endl << "weight: " << weight << endl << "state: ";
-	if (life == true)
+	if (isAlive() == true)
 	{
 		cout << "alive" << endl;
 	}
