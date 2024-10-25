@@ -7,6 +7,7 @@ class Bison
 	bool life;
 public:
 	Bison(int w, bool l);
+
 	void eatGrass();
 	int getWeight();
 	void setWeight(int w);

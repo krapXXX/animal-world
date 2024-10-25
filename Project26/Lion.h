@@ -9,5 +9,6 @@ public:
 	Lion(int p);
 	void eatHerb(Wildebeest* w);
 	int getPower();
-	void Print();
+	void Print
+	();
 };

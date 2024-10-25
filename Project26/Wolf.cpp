@@ -8,7 +8,7 @@ Wolf::Wolf(int p)
 
 void Wolf::eatHerb(Bison* b)
 {
-	if (power > b->getWeight())
+	if (power > b->getWeight()&&b->getWeight()>0)
 	{
 		power += 10;
 		b->setWeight(0);

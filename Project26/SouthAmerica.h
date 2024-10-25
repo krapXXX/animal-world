@@ -1,18 +1,16 @@
 #include <iostream>
 #include <vector>  
-#include "Herbivore.h"
 #include "Wolf.h"
 #include "Bison.h"  
-#include "Lion.h"        
 using namespace std;
 class America
 {
 	vector <Wolf*> wolves;
 	vector <Bison*> bisons;
-	int amountW;
-	int amountB;
+	int amountW=0;
+	int amountB=0;
 public:
-	void addH(Wolf* w);
-	void addC(Bison* b);
+	void addC(Wolf* w);
+	void addH(Bison* b);
 	void Print();
 };

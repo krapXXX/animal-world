@@ -8,7 +8,7 @@ Lion::Lion(int p)
 
 void Lion::eatHerb(Wildebeest* w)
 {
-	if (power > w->getWeight())
+	if (power > w->getWeight() && w->getWeight() > 0)
 	{
 		power += 10;
 		w->setWeight(0);

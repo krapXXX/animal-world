@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Africa.h" />
-    <ClInclude Include="AnimaWorld.h" />
+    <ClInclude Include="AnimalWorld.h" />
     <ClInclude Include="Bison.h" />
     <ClInclude Include="Carnivore.h" />
     <ClInclude Include="Continent.h" />
@@ -140,9 +140,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Africa.cpp" />
-    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="AnimalWorld.cpp" />
     <ClCompile Include="Bison.cpp" />
     <ClCompile Include="Lion.cpp" />
+    <ClCompile Include="Source.cpp" />
     <ClCompile Include="SouthAmerica.cpp" />
     <ClCompile Include="Wildebeest.cpp" />
     <ClCompile Include="Wolf.cpp" />
