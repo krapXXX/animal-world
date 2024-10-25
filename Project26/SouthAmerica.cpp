@@ -12,4 +12,5 @@ void America::addC(Bison* b)
 
 void America::Print()
 {
+	cout << "\t South America: " << endl << "Amount of herbivore: " << amountB << endl << "Amount of carnivore: " << amountW << endl;
 }

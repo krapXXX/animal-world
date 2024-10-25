@@ -12,4 +12,5 @@ void Africa::addC(Lion* l)
 
 void Africa::Print()
 {
+	cout << "\t Africa: " << endl << "Amount of herbivore: " << amountW << endl << "Amount of carnivore: " << amountL << endl;
 }
