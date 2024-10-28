@@ -5,6 +5,9 @@
 #include "Bison.h"  
 #include "Wildebeest.h"  
 #include "Wolf.h"  
+#include "Africa.h"  
+#include "SouthAmerica.h"  
+
 class AnimalWorld
 {
 	vector <Wolf*> wolves;
@@ -14,5 +17,5 @@ class AnimalWorld
 public:
 	void feedHerbivore();
 	void feedCarnivore();
-	void PrintAll();
+	void PrintAll(Africa& africa, America& america);
 };

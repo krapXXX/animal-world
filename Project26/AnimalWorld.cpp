@@ -35,10 +35,8 @@ void AnimalWorld::feedCarnivore()
     }
 }
 
-void AnimalWorld::PrintAll()
+void AnimalWorld::PrintAll(Africa& africa, America& america)
 {
-    Africa africa;
-    America america;
     cout << "\t \t Animal world "<<endl;
     africa.Print();
     america.Print();
